@@ -13,6 +13,8 @@ import { ContactDetailsComponent } from './pages/contact-details/contact-details
 import { ContactEditComponent } from './pages/contact-edit/contact-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StatsComponent } from './pages/stats/stats.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { AppHeaderComponent } from './cmps/app-header/app-header.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
@@ -25,7 +27,9 @@ import { StatsComponent } from './pages/stats/stats.component';
     ContactEditComponent,
     ContactIndexComponent,
     HomeComponent,
-    StatsComponent
+    StatsComponent,
+    SignupComponent,
+    AppHeaderComponent
   ],
   imports: [
     BrowserModule,

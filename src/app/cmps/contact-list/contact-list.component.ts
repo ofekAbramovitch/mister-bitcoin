@@ -15,7 +15,7 @@ export class ContactListComponent {
 
     onRemove(contactId: string | undefined) {
       try{
-        this.contactService.deleteContact(contactId as String)
+        this.contactService.deleteContact(contactId as string)
       } catch(err){
         console.log(err)
       }

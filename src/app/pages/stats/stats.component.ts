@@ -13,6 +13,6 @@ export class StatsComponent {
   prices!: Data
 
   async ngOnInit() {
-    this.prices = await this.bitcoinService.getMarhetPrice()
+    this.prices = this.bitcoinService.getMarketPrice()
   }
 }
