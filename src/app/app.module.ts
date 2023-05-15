@@ -15,6 +15,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StatsComponent } from './pages/stats/stats.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { AppHeaderComponent } from './cmps/app-header/app-header.component';
+import { TransferFundComponent } from './cmps/transfer-fund/transfer-fund.component';
+import { MoveListComponent } from './cmps/move-list/move-list.component';
+import { MovePreviewComponent } from './cmps/move-preview/move-preview.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
@@ -29,7 +32,10 @@ import { AppHeaderComponent } from './cmps/app-header/app-header.component';
     HomeComponent,
     StatsComponent,
     SignupComponent,
-    AppHeaderComponent
+    AppHeaderComponent,
+    TransferFundComponent,
+    MoveListComponent,
+    MovePreviewComponent
   ],
   imports: [
     BrowserModule,
