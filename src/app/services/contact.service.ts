@@ -132,7 +132,7 @@ export class ContactService {
     public contacts$ = this._contacts$.asObservable()
 
     private _contactFilter$ = new BehaviorSubject<ContactFilter>({ term: '' })
-    public contactFilter$ = this._contactFilter$.asObservable
+    public contactFilter$ = this._contactFilter$.asObservable()
 
     constructor() { }
 

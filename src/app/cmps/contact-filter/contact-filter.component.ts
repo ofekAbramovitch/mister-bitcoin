@@ -10,22 +10,22 @@ import { Subscription } from 'rxjs';
 })
 export class ContactFilterComponent implements OnInit, OnDestroy {
 
-    consructor(private contactService: ContactService) {}
+  constructor(private contactService: ContactService) { }
 
-    contactFilter!: ContactFilter
-    subscription!: Subscription
+  contactFilter!: ContactFilter
+  subscription!: Subscription
 
-    ngOnInit() {
-      this.subscription = this.contactService.contactFilter$.subscribe(contactFilter => {
-        this.contactFilter = contactFilter
-      })
-    }
+  ngOnInit() {
+    this.subscription = this.contactService.contactFilter$.subscribe(contactFilter => {
+      this.contactFilter = contactFilter
+    })
+  }
 
-    onSetFilter() {
-      this.contactService.setFilter({...this.contactFilter})
-    }
+  onSetFilter() {
+    this.contactService.setFilter({ ...this.contactFilter })
+  }
 
-    ngOnDestroy() {
-      this.subscription.unsubscribe()
-    }
+  ngOnDestroy() {
+    this.subscription.unsubscribe()
+  }
 }
