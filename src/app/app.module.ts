@@ -19,6 +19,7 @@ import { TransferFundComponent } from './cmps/transfer-fund/transfer-fund.compon
 import { MoveListComponent } from './cmps/move-list/move-list.component';
 import { MovePreviewComponent } from './cmps/move-preview/move-preview.component';
 import { AvgMonthsChartComponent } from './cmps/avg-months-chart/avg-months-chart.component';
+import { MarketPriceChartComponent } from './cmps/market-price-chart/market-price-chart.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
@@ -37,7 +38,8 @@ import { AvgMonthsChartComponent } from './cmps/avg-months-chart/avg-months-char
     TransferFundComponent,
     MoveListComponent,
     MovePreviewComponent,
-    AvgMonthsChartComponent
+    AvgMonthsChartComponent,
+    MarketPriceChartComponent
   ],
   imports: [
     BrowserModule,

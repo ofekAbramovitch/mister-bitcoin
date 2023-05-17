@@ -1,5 +1,3 @@
-import { Observable } from "rxjs"
-
 export interface Data {
     "status": string,
     "name": string,

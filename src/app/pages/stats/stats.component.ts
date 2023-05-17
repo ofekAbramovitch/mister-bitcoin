@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BitcoinService } from 'src/app/services/bitcoin.service';
 import { Data } from '../../models/graph.model';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'stats',
@@ -9,10 +10,10 @@ import { Data } from '../../models/graph.model';
 })
 export class StatsComponent {
 
-  constructor(private bitcoinService: BitcoinService) {}
-  prices!: Data
+  constructor(private bitcoinService: BitcoinService) { }
+  prices$!: Observable<Data>
 
-  async ngOnInit() {
-    this.prices = this.bitcoinService.getMarketPrice()
+  ngOnInit() {
+    this.prices$ = this.bitcoinService.getMarketPriceStream()
   }
 }
