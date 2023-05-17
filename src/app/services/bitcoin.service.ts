@@ -25,12 +25,6 @@ export class BitcoinService {
     return this.getResult('MARKET_PRICE', url)
   }
 
-  public getMarketPriceStream() {
-    return timer(0).pipe(
-      switchMap(() => this.getMarketPrice())
-    )
-  }
-
   getAvgBlockSize() {
     const url = 'https://api.blockchain.info/charts/avg-block-size?timespan=5months&format=json&cors=true'
     return this.getResult('AVG_BLOCK_SIZE', url)

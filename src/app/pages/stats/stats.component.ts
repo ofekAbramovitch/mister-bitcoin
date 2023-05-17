@@ -14,6 +14,6 @@ export class StatsComponent {
   prices$!: Observable<Data>
 
   ngOnInit() {
-    this.prices$ = this.bitcoinService.getMarketPriceStream()
+    this.prices$ = this.bitcoinService.getMarketPrice()
   }
 }

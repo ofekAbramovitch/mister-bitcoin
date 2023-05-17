@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Data } from '@angular/router';
 import { Chart } from 'chart.js';
-import { Value } from 'src/app/models/graph.model';
+import { Data, Value } from 'src/app/models/graph.model';
 
 @Component({
   selector: 'market-price-chart',

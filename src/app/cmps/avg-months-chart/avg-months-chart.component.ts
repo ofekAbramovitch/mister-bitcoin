@@ -1,8 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Data } from '@angular/router';
-import { Chart } from 'chart.js';
-import { registerables } from 'chart.js/dist';
-import { Value } from 'src/app/models/graph.model';
+import { Chart, registerables } from 'chart.js';
+import { Data, Value } from 'src/app/models/graph.model';
 Chart.register(...registerables);
 
 @Component({
@@ -21,7 +19,8 @@ export class AvgMonthsChartComponent implements OnInit {
         labels: this.getMonthNames(this.prices['values']),
         datasets: [{
           label: 'Market Price average 5 months',
-          data: this.getData(this.prices['values']),
+          data: this.getData(this.prices
+            ['values']),
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
