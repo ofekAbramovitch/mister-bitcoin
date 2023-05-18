@@ -1,10 +1,10 @@
 <section class="contact-list">
-
+    <fa-icon class="add-btn" [icon]="faUserPlus" [routerLink]="'edit'"></fa-icon>
     <ul>
         <li *ngFor="let contact of contacts">
             <div class="icons">
-
-
+                <fa-icon [routerLink]="['edit', contact._id]" class="icon" [icon]="faUserPen"></fa-icon>
+                <fa-icon (click)="onRemove(contact._id)" class="icon remove" [icon]="faTrash"></fa-icon>
             </div>
             <contact-preview [contact]="contact"></contact-preview>
         </li>
