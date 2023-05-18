@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment.development';
 
 const routes: Routes = [
   {
-    path: 'contact/edit/:id?', component: ContactEditComponent,
+    path: 'contact/edit/:id', component: ContactEditComponent,
     resolve: { contact: ContactResolver }
   },
   { path: 'contact/edit', component: ContactEditComponent },
