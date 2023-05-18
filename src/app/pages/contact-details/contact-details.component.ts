@@ -4,6 +4,8 @@ import { Contact } from 'src/app/models/contact.model';
 import { Move, User } from 'src/app/models/user.model';
 import { UserService } from 'src/app/services/user.service';
 import { Subscription } from 'rxjs';
+import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faUserPen } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'contact-details',
@@ -22,6 +24,8 @@ export class ContactDetailsComponent implements OnInit, OnDestroy {
   moves!: Move[]
   contact!: Contact
   subscription!: Subscription
+  faCircleArrowLeft = faCircleArrowLeft
+  faUserPen = faUserPen
 
     ngOnInit(): void {
       this.subscription = this.route.data.subscribe(data => {
