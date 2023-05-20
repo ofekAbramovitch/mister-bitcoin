@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Contact } from 'src/app/models/contact.model';
 
 @Component({
-  selector: 'app-contact-index',
+  selector: 'contact-index',
   templateUrl: './contact-index.component.html',
   styleUrls: ['./contact-index.component.scss']
 })

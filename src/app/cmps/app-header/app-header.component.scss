@@ -2,7 +2,7 @@ header {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     padding: 10px 0;
-    background-color:#000235;
+    background-color:#141416;
     color: white;
     font-size: 17px;
     position: sticky;
@@ -33,7 +33,7 @@ header {
         cursor: pointer;
   
         &.active{
-          color: orange;
+          color: goldenrod;
         }
       }
     }
