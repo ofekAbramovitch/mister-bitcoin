@@ -9,7 +9,7 @@ import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
-  selector: 'app-contact-edit',
+  selector: 'contact-edit',
   templateUrl: './contact-edit.component.html',
   styleUrls: ['./contact-edit.component.scss']
 })
